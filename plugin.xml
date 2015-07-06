@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-adsmogo"
+        version="0.1">
+
+  <name>AdsMogo Plugin</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/adsmogo.js" target="js/adsmogo.js"/>
+
+  <js-module src="www/adsmogo.js" name="adsmogo">
+    <clobbers target="adsmogo" />
+  </js-module>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="LNAdsMogo">
+        <param name="ios-package" value="LNAdsMogo" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/LNAdsMogo.h" target-dir="LNAdsMogo"/>
+    <source-file src="src/ios/LNAdsMogo.m" target-dir="LNAdsMogo"/>
+
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_btnconfirm.png" target-dir="AdsMogoRes/adchina" />
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_btnconfirm2.png" target-dir="AdsMogoRes/adchina" />
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_closeButton.png" target-dir="AdsMogoRes/adchina" />
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_closeButton@2x.png" target-dir="AdsMogoRes/adchina" />
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_full_backgrand.png" target-dir="AdsMogoRes/adchina" />
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_stoploading.png" target-dir="AdsMogoRes/adchina" />
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_stoploading@2x.png" target-dir="AdsMogoRes/adchina" />
+    <resource-file src="src/ios/AdsMogoRes/adchina/adchina_toolbar.png" target-dir="AdsMogoRes/adchina" />
+
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_1.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_2.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_3.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_4.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_5.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_6.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_7.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_8.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_9.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_10.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_11.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_12.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_13.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_14.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_15.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_16.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_17.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_18.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_19.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_20.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_21.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_22.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_23.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_24.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_25.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_26.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_27.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_28.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideo_29.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/admogoVideoButton_off@2x.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/adsmenu_off@2x.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/adsmenu_refresh@2x.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/adsmenuVoice_off@2x.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/adsmenuVoice_on@2x.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/adsmogoVideoMenu_bg@2x.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/admogoVideoRes/adsmogoWebViewMenu_bg@2x.png" target-dir="AdsMogoRes/admogoVideoRes" />
+    <resource-file src="src/ios/AdsMogoRes/animation/adsmogo_star.png" target-dir="AdsMogoRes/animation" />
+    <resource-file src="src/ios/AdsMogoRes/animation/adsmogo_star@2x.png" target-dir="AdsMogoRes/animation" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/AdMoGoFullScreenAlert/ads_alert_left_button.png" target-dir="AdsMogoRes/FullScreen/AdMoGoFullScreenAlert" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/AdMoGoFullScreenAlert/ads_alert_right_button.png" target-dir="AdsMogoRes/FullScreen/AdMoGoFullScreenAlert" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/fullscreenImg/loading.gif" target-dir="AdsMogoRes/FullScreen/fullscreenImg" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/adsmogo_fsclosebtn.png" target-dir="AdsMogoRes/FullScreen" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/adsmogo_fsclosebtn@2x.png" target-dir="AdsMogoRes/FullScreen" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/adsMoGoFullScreen.html" target-dir="AdsMogoRes/FullScreen" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/adsMoGoInterstitial.html" target-dir="AdsMogoRes/FullScreen" />
+    <resource-file src="src/ios/AdsMogoRes/FullScreen/mogoVideo.html" target-dir="AdsMogoRes/FullScreen" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_adclose@2x.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_adclose@3x.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_bannerbg@2x.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_bannerface95.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_bannerface305.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_btnbg@2x.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_close@2x.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_corner@2x.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_picrollbg@2x.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/High/adsmogo_rm_closeBtn.png" target-dir="AdsMogoRes/High" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/download-320x50.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/download-468x60.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/download-640x100.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/download-728x90.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/download-960x150.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/download-1242x169.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/website-320x50.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/website-468x60.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/website-640x100.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/website-728x90.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/website-960x150.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_clk/website-1242x169.gif" target-dir="AdsMogoRes/Normal/adsmogo_clk" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_adclose.png" target-dir="AdsMogoRes/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_bannerbg.png" target-dir="AdsMogoRes/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_bannerface50.png" target-dir="AdsMogoRes/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_btnbg.png" target-dir="AdsMogoRes/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_close.png" target-dir="AdsMogoRes/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_corner.png" target-dir="AdsMogoRes/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/Normal/adsmogo_picrollbg.png" target-dir="AdsMogoRes/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/bg@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/hengtiao@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/mail@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/safari@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/shareviewfoot_bg@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/shareviewhead_bg@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/shareviewhead_icon@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/sms@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_back_grey@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_back_hover@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_back@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_close_hover@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_close@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_next_grey@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_next_hover@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_next@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_pause_hover@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_pause@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_refresh_hover@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_refresh@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/High/webview_bar_share@2x.png" target-dir="AdsMogoRes/WebBrowser/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/bg_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_back_grey_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_back_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_close_hover_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_close_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_next_grey_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_next_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_pause_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_refresh_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/High/webview_bar_share_ipad@2x.png" target-dir="AdsMogoRes/WebBrowser/ipad/High" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/bg_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_back_grey_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_back_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_close_hover_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_close_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_next_grey_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_next_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_pause_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_refresh_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/ipad/Normal/webview_bar_share_ipad.png" target-dir="AdsMogoRes/WebBrowser/ipad/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/bg.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/mail.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/hengtiao.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/safari.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/shareviewfoot_bg.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/shareviewhead_bg.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/shareviewhead_icon.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/sms.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_back_grey.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_back.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_close_hover.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_close.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_next_grey.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_next.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_pause.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_refresh.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+    <resource-file src="src/ios/AdsMogoRes/WebBrowser/Normal/webview_bar_share.png" target-dir="AdsMogoRes/WebBrowser/Normal" />
+
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdAPIBannerNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdAPIInterstitialNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdAPISDKNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdAPISplashNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdAPIVideoNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdapterCustomEvent.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdNetworkAdapter.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdNetworkAdapter+Helpers.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdNetworkConfig.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdNetworkInterstitialAdapter.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdSDKBannerNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdSDKInterstitialNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdSDKSplashNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAdSDKVideoNetworkRegistry.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAppUpdateRemind.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoAppUpdateRemindDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoClassWrapper.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoConfigData.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoConfigDataCenter.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMogoConfigDic.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoCore.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoCoreTimerFireDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoCountryCodeHelper.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoCountryCodeHelperIOS5.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoDelegateProtocol.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoDeviceInfoHelper.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoFullScreenAdapterCustomEvent.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoInterstitial.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoInterstitialDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoInterstitialManager.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoLocationDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoLogCenter.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoReachability.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoSplashAds.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoSplashAdsDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoSplashConfigInfDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoView.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoViewAnimationDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdMoGoWebBrowserControllerUserDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdsMOGOContent.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AdViewType.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AMNetworkReachabilityDelegate.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/AMNetworkReachabilityWrapper.h" target-dir="AdsMoGoSDK"/>
+    <header-file src="src/ios/AdsMoGoSDK/NSMutableDictionary+AdsMogoDic.h" target-dir="AdsMoGoSDK"/>
+    <resource-file src="src/ios/AdsMoGoSDK/AdMoGoWebBrowser_ipad.xib" target-dir="AdsMoGoSDK" />
+    <resource-file src="src/ios/AdsMoGoSDK/AdMoGoWebBrowser.xib" target-dir="AdsMoGoSDK" />
+
+    <source-file src="src/ios/AdsMoGoSDK/libAdsMogo_i386.a" target-dir="AdsMoGoSDK"/>
+    <source-file src="src/ios/AdsMoGoSDK/libAdsMogo.a" target-dir="AdsMoGoSDK"/>
+
+
+    <framework src="libiconv.dylib" />
+    <framework src="libstdc++.6.0.9.dylib" />
+    <framework src="libz.dylib" />
+    <framework src="libxml2.dylib" />
+    <framework src="libz.dylib" />
+    <framework src="libsqlite3.dylib" />
+    <framework src="CoreFoundation.framework" />
+    <framework src="Security.framework" />
+    <framework src="CoreData.framework" />
+    <framework src="CoreMedia.framework" />
+    <framework src="CoreVideo.framework" />
+    <framework src="ImageIO.framework" />
+    <framework src="CoreMotion.framework" />
+    <framework src="CFNetwork.framework" />
+    <framework src="MobileCoreServices.framework" />
+    <framework src="iAd.framework" />    
+    <framework src="OpenAL.framework" />    
+    <framework src="AVFoundation.framework" />
+    <framework src="MediaPlayer.framework" />
+    <framework src="AudioToolbox.framework" />
+    <framework src="MapKit.framework" />
+    <framework src="SystemConfiguration.framework" />
+    <framework src="QuartzCore.framework" />
+    <framework src="MessageUI.framework" />
+    <framework src="CoreLocation.framework" />
+    <framework src="EventKitUI.framework" />
+    <framework src="CoreTelephony.framework" />
+    <framework src="UIKit.framework" />
+    <framework src="Foundation.framework" />
+    <framework src="CoreGraphics.framework" />
+    <framework src="AdSupport.framework" />
+    <framework src="CoreText.framework" />
+    <framework src="EventKit.framework" />
+    <framework src="StoreKit.framework" />
+    <framework src="SystemConfiguration.framework" />
+    
+
+
+  </platform>
+
+</plugin>
