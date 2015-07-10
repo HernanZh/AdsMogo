@@ -1,5 +1,4 @@
 #import "LNAdsMogo.h"
-#import "AdMoGoInterstitialManager.h"
 
 
 @implementation LNAdsMogo
@@ -7,15 +6,16 @@
 - (void)pluginInitialize
 {
     NSLog(@"plugin initialize");
-    [AdMoGoInterstitialManager setAppKey:@"e0b8fd945682481cb0c52479b08bcafe"];
-    [[AdMoGoInterstitialManager shareInstance] initDefaultInterstitial];
+    AdMoGoInterstitial *interstitialIns = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"e0b8fd945682481cb0c52479b08bcafe"];
+    interstitialIns.delegate = self;
 }
 
 - (void) showInterstitial:(CDVInvokedUrlCommand*)command
 {
-    NSLog(@"showInterstitial");
     [self.commandDelegate runInBackground:^{
-        [[AdMoGoInterstitialManager shareInstance] interstitialShow:YES];
+        NSLog(@"show Interstitial");
+        AdMoGoInterstitial *ins = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"e0b8fd945682481cb0c52479b08bcafe"];
+        [ins interstitialShow:YES];
     }];
 }
 
@@ -23,9 +23,60 @@
 {
     NSLog(@"cancelShow");
     [self.commandDelegate runInBackground:^{
-        [[AdMoGoInterstitialManager shareInstance] interstitialCancel];
+        AdMoGoInterstitial *ins = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"e0b8fd945682481cb0c52479b08bcafe"];
+        [ins interstitialCancel];
+    }];
+}
+
+- (void) interstitialLoaded:(CDVInvokedUrlCommand*)command
+{
+    loadedCB = [command callbackId];
+}
+
+- (void) interstitialClosed:(CDVInvokedUrlCommand*)command
+{
+    closedCB = [command callbackId];
+}
+
+- (void)adsMoGoInterstitialAdWillPresent {
+    NSLog(@"present");
+    [self.commandDelegate runInBackground:^{
+        CDVPluginResult* result = [CDVPluginResult
+                                   resultWithStatus:CDVCommandStatus_OK];
+        
+        [self.commandDelegate sendPluginResult:result callbackId:loadedCB];
     }];
 }
 
 
+- (void)adsMoGoInterstitialAdDidDismiss {
+    NSLog(@"dismiss");
+    [self.commandDelegate runInBackground:^{
+        CDVPluginResult* result = [CDVPluginResult
+                                   resultWithStatus:CDVCommandStatus_OK];
+        
+        [self.commandDelegate sendPluginResult:result callbackId:closedCB];
+    }];
+}
+
+- (UIViewController *)viewControllerForPresentingInterstitialModalView{
+    return self.viewController;
+}
+
+- (BOOL)adsMogoInterstitialAdDidExpireAd{
+    return NO;
+}
+
+- (void)adMoGoInterstitialInitFinish
+{
+    
+}
+
+/*
+ 手动轮换下，广告轮空回调
+ */
+- (void)adMoGoInterstitialInMaualfreshAllAdsFail
+{
+    
+}
 @end

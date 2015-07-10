@@ -217,8 +217,8 @@
     <resource-file src="src/ios/AdsMoGoSDK/AdMoGoWebBrowser_ipad.xib" target-dir="AdsMoGoSDK" />
     <resource-file src="src/ios/AdsMoGoSDK/AdMoGoWebBrowser.xib" target-dir="AdsMoGoSDK" />
 
-    <source-file src="src/ios/AdsMoGoSDK/libAdsMogo_i386.a" target-dir="AdsMoGoSDK"/>
-    <source-file src="src/ios/AdsMoGoSDK/libAdsMogo.a" target-dir="AdsMoGoSDK"/>
+    <source-file src="src/ios/AdsMoGoSDK/libAdsMogo_i386.a" framework="true"/>
+    <source-file src="src/ios/AdsMoGoSDK/libAdsMogo.a" framework="true"/>
 
 
     <framework src="libiconv.dylib" />
