@@ -6,7 +6,7 @@
 - (void)pluginInitialize
 {
     NSLog(@"plugin initialize");
-    AdMoGoInterstitial *interstitialIns = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"e0b8fd945682481cb0c52479b08bcafe"];
+    AdMoGoInterstitial *interstitialIns = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"9131689ff6894bf4bfa63003f35f4c3b"];
     interstitialIns.delegate = self;
 }
 
@@ -14,7 +14,7 @@
 {
     [self.commandDelegate runInBackground:^{
         NSLog(@"show Interstitial");
-        AdMoGoInterstitial *ins = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"e0b8fd945682481cb0c52479b08bcafe"];
+        AdMoGoInterstitial *ins = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"9131689ff6894bf4bfa63003f35f4c3b"];
         [ins interstitialShow:YES];
     }];
 }
@@ -23,7 +23,7 @@
 {
     NSLog(@"cancelShow");
     [self.commandDelegate runInBackground:^{
-        AdMoGoInterstitial *ins = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"e0b8fd945682481cb0c52479b08bcafe"];
+        AdMoGoInterstitial *ins = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"9131689ff6894bf4bfa63003f35f4c3b"];
         [ins interstitialCancel];
     }];
 }
