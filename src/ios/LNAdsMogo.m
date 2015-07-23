@@ -56,6 +56,9 @@
                                    resultWithStatus:CDVCommandStatus_OK];
         
         [self.commandDelegate sendPluginResult:result callbackId:closedCB];
+        
+        AdMoGoInterstitial *ins = [[AdMoGoInterstitialManager shareInstance] adMogoInterstitialByAppKey:@"9131689ff6894bf4bfa63003f35f4c3b"];
+        [ins interstitialCancel];
     }];
 }
 
